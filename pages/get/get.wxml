@@ -1,0 +1,11 @@
+
+<!--get.wxml-->
+<view >
+  <view>
+    <image src="{{bgPng}}" class="back"></image>
+    <view class="wb">
+    <text >{{dl}}</text>
+    </view>
+  </view>
+  <button class="bind" style="width:750rpx" bindtap="getAnswer">{{motto}}</button>
+</view>
