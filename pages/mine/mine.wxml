@@ -1,0 +1,20 @@
+
+<!--mine.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<button class="plp" style="width:750rpx" bindtap="mpl">
+  <text  class="wb">我的漂流瓶</text>
+</button>
+<button class="plp" style="width:750rpx" bindtap="plxj">
+  <text  class="wb">漂流瓶详解</text>
+</button>
+<button class="plp" style="width:750rpx" bindtap="user">
+  <text  class="wb">修改个人信息</text>
+</button>
