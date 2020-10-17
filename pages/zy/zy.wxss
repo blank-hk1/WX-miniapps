@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+page {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lunbo{
+  width: 100%;
+  height: 500rpx;
+}
+.lunbo image{
+  width: 100%;
+}
+.sj{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602683814912&di=bdfc05ad738ef063c024d99e2a314745&imgtype=0&src=http%3A%2F%2Fpic5.nipic.com%2F20091231%2F3255317_114047005525_2.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 300rpx;
+  font-size: 50rpx;
+  color: cadetblue;
+}
+.play-style {
+  position: fixed;
+  bottom: 50rpx;
+  left: 0;
+  height: 240rpx;
+  width: 100%;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.playstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  left: 295rpx;
+}
+
+.leftstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  left: 67.5rpx;
+}
+
+.rightstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  right: 67.5rpx;
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+}
