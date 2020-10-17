@@ -1,0 +1,32 @@
+<!--pages/zy/zy.wxml-->
+<view>
+    <!--轮播图-->
+<swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+       <swiper-item> <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602684860769&di=39fce0bf578183478d1a389ab76cea9d&imgtype=0&src=http%3A%2F%2Fdpic.tiankong.com%2Fdn%2F0m%2FQJ8477065702.jpg'></image> </swiper-item>
+       <swiper-item> <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602682402604&di=90242ef9939b6c7f72119f15485bd34c&imgtype=0&src=http%3A%2F%2Fimg1.juimg.com%2F160409%2F330800-16040911292961.jpg'></image></swiper-item>
+       <swiper-item> <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602682432669&di=01182e87ae641423b81226a767b6f6b4&imgtype=0&src=http%3A%2F%2Ffile03.16sucai.com%2F2017%2F1100%2F16sucai_P59201F287.JPG'></image> </swiper-item>
+      </swiper>
+</view>
+<view class="sj">
+     <text>截止目前， \n</text>
+     <text> \n</text>
+     <text>您已经扔了</text>
+     <text>{{throwing}}</text>
+     <text>个漂流瓶, \n</text>
+     <text> \n</text>
+     <text>您已经捡了{{geting}}个漂流瓶。 \n</text>
+</view>
+<view class="play-style">
+  <view class="leftstyle">
+  <image class="img" src="{{throwSrc}}" bindtap="throw"></image>
+   <text>扔一个</text>
+  </view>
+<view class="playstyle">
+  <image class="img" src="{{getSrc}}" bindtap="get"></image>
+  <text>捡一个</text>
+  </view>
+  <view class="rightstyle">
+  <image class="img" src="{{mySrc}}" bindtap="mine"></image>
+   <text>我的瓶子</text>
+  </view>
+</view>
