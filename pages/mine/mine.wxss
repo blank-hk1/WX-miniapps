@@ -1,0 +1,32 @@
+/**mine.wxss**/
+
+.container{
+  background-image: url('http://img1.cache.netease.com/paipai/2013/10/21/20131021150046eec3f.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500rpx;
+  margin-top: 0rpx;
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: darkslategray;
+}
+.plp{
+  border: 3rpx solid  darkslategray;
+  padding: 10rpx;
+}
