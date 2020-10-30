@@ -1,6 +1,8 @@
 //write.js
 //获取应用实例
 var app = getApp()
+const db = wx.cloud.database({})
+const cont = db.collection('hkcloud')
 Page({
   data: {
     jp: "../../images/jp.png",
@@ -11,6 +13,7 @@ Page({
     animationBottle: {},//扔出漂流瓶动画
     bottle: false,//漂流瓶
     contentInput: '',//内容
+    num:0
   },
   onLoad: function () {
     //在leancloud生成目录
@@ -39,7 +42,6 @@ Page({
     this.setData({
       isInput: !this.data.isInput
     })
-
   },
   //手指按下  
   touchdown: function () {
@@ -107,7 +109,15 @@ Page({
     })
   },
   //扔出去
+  //获取多行输入框内容
+  bindTextAreaBlur: function (e) {
+    //console.log(e.detail.value)
+    this.setData({
+      contentInput: e.detail.value
+    });
+  },
   throwBottle: function () {
+    let self = this;
     var _this = this;
     //键盘的时候,点击按钮无效
     if (this.data.isInput) return
@@ -135,26 +145,31 @@ Page({
           success: function (res) {
             if (res.confirm) {
               console.log('用户点击确定')
+              console.log(self.data.contentInput)
             }
           }
         })
-        return
+    const db = wx.cloud.database({});
+    const cont = db.collection('Floating');
+    db.collection("Floating").count()
+    .then(async res=>{
+      let totals = res.total+1;
+      cont.add({
+        data:{
+          数据内容: self.data.contentInput,
+          数据id:totals,
+        }
+      })
+    })  
+    return
+        
       }
       //将文本漂流瓶上传到leancloud
       // 执行 CQL 语句实现新增一个 TodoFolder 对象
       //扔出漂流瓶动画
       throwBottleAnimation.call(_this);
     }, 50)
-
   },
-  //获取多行输入框内容
-  bindTextAreaBlur: function (e) {
-    console.log(e.detail.value)
-    this.setData({
-      contentInput: e.detail.value
-    })
-  }
-
 })
 
 //麦克风帧动画  
