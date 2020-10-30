@@ -12,8 +12,8 @@ page{
   z-index: -1;
 }
 .wb{
-  font-size: 100rpx;
-  color: antiquewhite;
+  font-size: 60rpx;
+  color: black;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -21,7 +21,7 @@ page{
 }
 .bind{
   background-color: cornflowerblue;
-  color: antiquewhite;
+  color: black;
   position: fixed;
   bottom: 0;
   display: flex;
