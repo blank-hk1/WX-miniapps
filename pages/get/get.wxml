@@ -5,6 +5,8 @@
     <image src="{{bgPng}}" class="back"></image>
     <view class="wb">
     <text >{{dl}}</text>
+    <text>{{content1}}</text>
+    <text>{{content}}</text>
     </view>
   </view>
   <button class="bind" style="width:750rpx" bindtap="getAnswer">{{motto}}</button>
