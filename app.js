@@ -5,7 +5,13 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    if(!wx.cloud){
+      console.error('出现错误')
+    }else{
+      wx.cloud.init({
+        traceUser:true,
+      })
+    }
     // 登录
     wx.login({
       success: res => {
@@ -32,11 +38,14 @@ App({
         }
       }
     })
+    const db = wx.cloud.database({
+      env: "hkcloud"
+    });
   },
   globalData: {
     userInfo: null,
     throw:0,
     get:0
-  }
-
+  },
+  
 })
