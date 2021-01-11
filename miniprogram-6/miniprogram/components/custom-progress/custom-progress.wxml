@@ -1,0 +1,6 @@
+<view class="progress custom-class">
+  <view class="progress-content" style="width: {{percent}}%;"></view>
+  <image class="progress-arrow" style="left: {{percent}}%;" height="100%" width="100%"
+             fit="cover"
+             src="https://686b-hkcloud-7gdd32w53bf7af31-1303991012.tcb.qcloud.la/time2.png?sign=a234758547f1d45b9d4e926c8410631b&t=1609814960"></image>
+</view>
