@@ -1,0 +1,42 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+    <view class="user-head">
+        <image src="../../images/dog.png" ></image>
+    </view>
+    <view class="radio-group">
+    <radio-group  bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    </radio-group>
+    </view>
+    <view class="baby-age-t">
+      <text class="baby-age-text">宝贝年龄</text>
+    </view>
+    <view class="age-insert">
+          <input class="insert" type="text" placeholder="请输入年龄" bindtap="userAgeinput"/>
+    </view>
+    <view class="baby-education-t">
+      <text class="baby-education-text">教育程度</text>
+    </view>
+ <view class="baby-education">    
+   <view class='list-msg'>
+<!--下拉框  -->
+     <view class='list-msg2' bindtap='bindShowMsg'>
+        <text>{{education}}</text>
+        <image style='height:20rpx;width:20rpx;' src='../../images/xialajiantou.png'></image>
+     </view>
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="幼儿园">幼儿园</view>
+        <view class="select_one" bindtap="mySelect" data-name="小学">小学</view>
+        <view class="select_one" bindtap="mySelect" data-name="初中">初中</view>
+    </view>
+    </view>
+  </view>
+  <view class="last-button">
+      <button class="save" style="width:35%">保存</button>
+      <button class="cancel" style="width:35%">取消</button>
+  </view>
+</view>
+
