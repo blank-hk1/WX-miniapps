@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Schulte/Schulte",
+    "pages/userinfo/userinfo",
+    "pages/game/game",
+    "pages/user/user",
+    "pages/Demo/Demo",
+    "pages/information/information"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "usingComponents": {
+    "custom-progress": "components/custom-progress/custom-progress"
+  }
+}
