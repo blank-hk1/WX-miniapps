@@ -1,0 +1,315 @@
+/**index.wxss**/
+page {
+  background-color: #fbf9fe;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://686b-hkcloud-7gdd32w53bf7af31-1303991012.tcb.qcloud.la/back.png?sign=1d2939ffc73e5c4ccf8dcf202e5fc3c3&t=1608105622);
+}
+
+.index {
+  width: 100%;
+  height: 100%;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.getInfo {
+  margin-top: 60px;
+}
+
+.information {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.userinfo-nickname {
+  margin-top: 30px;
+}
+
+.level {
+  margin-top: 5px;
+}
+
+.brain {
+  margin-top: 5px;
+}
+
+.avatarFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #124779;
+  border-style: solid;
+  border-width: 5rpx;
+  border-color: #d8d6db;
+  border-radius: 50%;
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+
+.swiper-tab {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+}
+
+.swiper-tab-item {
+  display: inline-block;
+  width: 33.33%;
+  color: #EFEDFA;
+}
+
+.active {
+  color: #F0EBF6;
+}
+
+.learningMode {
+  display: flex;
+  flex-direction: column;
+}
+
+.allswiper {
+  height: 450px;
+}
+
+.firstscroll {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.secondscroll {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.firstitem {
+  height: 100%;
+}
+
+.seconditem {
+  height: 100%;
+}
+
+.thirditem {
+  height: 100%;
+}
+
+.one {
+  margin-top: 12px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.two {
+  margin-top: 12px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.three {
+  margin-top: 12px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.four {
+  margin-top: 12px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.five {
+  margin-top: 12px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.six {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  height: 150px;
+  background-color: #fffceb;
+  border-style: solid;
+  box-shadow: 0px 2px 4px 2px rgba(73, 72, 72, 0.4);
+  border-width: 0rpx;
+  border-radius: 40rpx;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.game {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.open {
+  font-size: 0.8em;
+  color: #ffb5c7;
+  margin-top: 30px;
+  background-color: #fa5172;
+  border-radius: 50rpx;
+}
+
+.img {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 160px;
+  height: 130px;
+}
+
+.imgfive {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 120px;
+  height: 130px;
+}
+
+.one-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.two-row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.three-row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.iconbackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin-left: 73px;
+  margin-top: -7px;
+}
+
+.thirdscroll {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.testreport1 {
+  position: relative;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 80%;
+  height: 300px;
+  border-radius: 1rem;
+  background-color: #fffceb;
+}
+
+.h1 {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+
+.h2 {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+
+.ec-canvas {
+  display: block;
+  width: 90%;
+  height: 90%;
+}
+
+.testreport2 {
+  position: relative;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  width: 80%;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: #fffceb;
+}
+
+.progress {
+  width: 70%;
+  height: 20%;
+}
+
+.testreport3 {
+  position: relative;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #fffceb;
+}
+.historyGame{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 5%;
+  margin-bottom: 15px;
+  width: 85%;
+}
