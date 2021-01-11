@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="page">
+  <!-- 主体部分 -->
+  <view class="gameNavigation">
+    <text class="gameName">舒尔特方块</text>
+  </view>
+  <custom-progress custom-class="progress" percent="{{curret * 100 / 120000}}"/>
+  <view class="game">
+    <!-- 游戏主体 -->
+    <view class="row" wx:for="{{array}}" wx:for-item="row" wx:key="*this">
+      <view class="cell {{num===flag?'cell_clicked':''}}"  wx:for="{{row}}" wx:for-item="num" wx:key="*this"
+        bindtap="tapNum" data-num="{{num}}" disabled="true">
+        <view>{{num}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="Back" wx:if="{{Settle}}">
+    <view class="Settlement">
+      <view class="SettleNav">
+              <text class="iconfont icon-xingxing" style="font-size:35px;"></text>
+              <text class="iconfont icon-xingxing" style="font-size:35px;padding-left:20px;"></text>
+              <text class="iconfont icon-xingxing" style="font-size:35px;padding-left:20px;"></text>
+      </view>
+      <view class="SettleScore">
+        <text>你的成绩是</text>       
+      </view>
+      <view class="SettleScore1">
+        <text>{{Score}}</text>
+      </view>
+      <view class="robot1">
+        <image src="../../images/game1.png" class="robot"></image>
+      </view>
+      <view class="Button">
+        <button class="bt1" bindtap="next">{{over}}</button>       
+      </view>     
+    </view>      
+  </view>
+</view>
