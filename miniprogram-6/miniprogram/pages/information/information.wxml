@@ -1,0 +1,45 @@
+<!--miniprogram/pages/information/information.wxml-->
+<view class="user-head">
+    <text class="tips">宝贝昵称</text>
+    <text class="header">空白丶</text>
+</view>
+<view class="Gender">
+   <text class="tips">性别选择</text>
+   <view class="Select-button">
+       <button class="bt1 {{active1==1? 'bt2':''}}" style="width:45%;height:80%" bindtap="set1">
+          <image src="https://686b-hkcloud-7gdd32w53bf7af31-1303991012.tcb.qcloud.la/boy.png?sign=8441f312c4552b97aa32c8620f347d81&t=1610004170"></image>
+          <text>男孩</text>
+       </button>
+       <button class="bt1 {{active1==1? '':'bt2'}}" style="width:45%;height:80%" bindtap="set2">
+          <image src="https://686b-hkcloud-7gdd32w53bf7af31-1303991012.tcb.qcloud.la/girl.png?sign=a1c29a8c2fea2edade6ca3412f26a276&t=1610004246"></image>
+          <text>女孩</text>
+        </button>
+   </view>
+</view>
+<view class="Gender">
+   <text class="tips">阶段选择</text>
+   <view class="Select-button">
+       <button class="bt1 {{active3==1? 'bt2':''}}" style="width:45%;height:80%" bindtap="set3">
+          <text style="font-size:40rpx">学龄前</text>
+          <text>5-7岁</text>
+       </button>
+       <button class="bt1 {{active3==1? '':'bt2'}}" style="width:45%;height:80%" bindtap="set4">
+        <text style="font-size:40rpx">小学</text>
+          <text>7-10岁</text>
+        </button>
+   </view>
+</view>
+<view class="introduce">
+    <view class="in-head">
+      <image src="https://686b-hkcloud-7gdd32w53bf7af31-1303991012.tcb.qcloud.la/6.png?sign=3f7e590672a97e3c7221c148f500ddc6&t=1610005124"></image>
+    </view>
+    <view class="in-text">
+       <text>{{introduce}}</text>
+    </view>
+</view>
+<view class="bottom">
+  <button class="bt" bindtap="back">确定</button>
+</view>
+
+
+
