@@ -1,0 +1,9 @@
+<!--pages/game/game.wxml-->
+<view class="page1" style="background-image:url(../../images/back.png) ">
+  <image class="game" src="../../images/game1.png"></image>
+  <view class="introduction">
+      <view class="introduction1">
+         <text class="stylesheet">舒尔特方块</text>
+      </view>
+  </view>
+</view>
