@@ -1,0 +1,25 @@
+<view class='Main'>
+   <image class='userimage' src='../../images/dog.png'></image> 
+      <text class='usertext'>QFUE58XZ</text>
+      <text class='usertext1'>修改宝贝资料 ></text>
+      <image src='../../images/hg.png' class="hgimage"></image>
+</view>
+<view class="xl">
+     <image src="../../images/xl.png" class="xlimage">
+     </image>
+</view>
+<view class="xx1">
+    <image src='../../images/czbg.png' class="xximage"></image>
+</view>
+<view class="xx">
+   <image src='../../images/phb.png' class="xximage"></image>
+</view>
+<view class="xx">
+    <image src='../../images/mxkp.png' class="xximage"></image>
+</view>
+<view class="xx">
+   <image src='../../images/kfzx.png' class="xximage"></image>
+</view>
+<view class="xx">
+    <image src='../../images/gdgd.png' class="xximage"></image>
+</view>  
