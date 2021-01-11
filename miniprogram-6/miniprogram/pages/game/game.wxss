@@ -1,0 +1,30 @@
+/* pages/game/game.wxss */
+.page1{
+  width: 100%;
+  height: 100%;
+}
+.game{
+  width: 50%;
+  height: 30%;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.introduction{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content:center;
+  margin-top: -15%;
+}
+.introduction1{
+  width: 80%;
+  height: 100%;
+  background: white;
+  border-radius: 25px;
+}
+.stylesheet{
+  font-size: 25px;
+  font-weight: bolder;
+  color: blueviolet;
+  margin-left: 10%;
+}
