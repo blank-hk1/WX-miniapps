@@ -1,0 +1,66 @@
+.Main{
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+}
+.userimage{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 60rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.usertext{
+  font-size: 35rpx;
+  font-weight: 600;
+  margin-left: 10rpx;
+  margin-top: 40rpx;
+}
+.usertext1{
+  font-size: 35rpx;
+  font-weight: 600;
+  margin-left: -175rpx;
+  margin-top: 90rpx;
+}
+.hgimage{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.szimage{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 40rpx;
+  margin-left: 100rpx;
+}
+.xl{
+  width: auto;
+  height: auto;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.xlimage{
+  height: 120rpx;
+  width: 650rpx;
+}
+.xx1{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rpx;
+}
+.xx{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.xximage{
+  height: 120rpx;
+  width: 7000rpx;
+}
