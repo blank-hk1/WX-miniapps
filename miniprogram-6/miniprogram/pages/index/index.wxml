@@ -1,0 +1,173 @@
+<!--index.wxml-->
+<view class="index" >
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo && canIUse}}" > 
+      <view class="avatarFrame">
+        <image open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo-avatar" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/1.png" mode="cover"></image>
+      </view>
+      <view class="information">
+        <text class="getInfo">点击头像获取用户信息</text>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="avatarFrame">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class="information">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="level">level：0</text>
+        <text class="brain">脑力值：0</text>
+      </view>
+    </block>
+  </view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">训练模式</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">测试模式</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">分析报告</view>
+  </view>
+  <swiper class="allswiper" current="{{currentTab}}" duration="300" bindchange="swiperTab">
+    <swiper-item class="firstitem">
+      <scroll-view class="firstscroll" scroll-y="true">
+        <button class="one" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #8e57aa">舒尔特方块</text>
+              <button class="open" style="width: 90%" bindtap="getSchutle">进入</button>
+            </view>
+            <image class="img" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/1.png"></image>
+          </view>
+        </button>
+        <button class="two" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #25cdcd">连接能手</text>
+              <button class="open" style="width: 90%">进入</button>
+            </view>
+            <image class="img" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/2.png"></image>
+          </view>
+        </button>
+        <button class="three" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #e93852">听声辩位</text>
+              <button class="open" style="width: 90%">进入</button>
+            </view>
+            <image class="img" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/3.png"></image>
+          </view>
+        </button>
+        <button class="four" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #50b245">图形记忆</text>
+              <button class="open" style="width: 90%">进入</button>
+            </view>
+            <image class="img" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/4.png"></image>
+          </view>
+        </button>
+        <button class="five" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #fac40a">图形推理</text>
+              <button class="open" style="width: 90%">进入</button>
+            </view>
+            <image class="imgfive" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/5.png"></image>
+          </view>
+        </button>
+        <button class="six" style="width: 90%">
+          <view class="button">
+            <view class="game">
+              <text class="title" style="color: #2c5ba9">字词回忆</text>
+              <button class="open" style="width: 90%">进入</button>
+            </view>
+            <image class="img" src="cloud://hkcloud-7gdd32w53bf7af31.686b-hkcloud-7gdd32w53bf7af31-1303991012/6.png"></image>
+          </view>
+        </button>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="seconditem">
+      <scroll-view class="secondscroll" scroll-y="true">
+        <view class="one-row">
+          <button class="one" style="width: 42%; background-color: #8e57aa" bindtap="connect">
+            <text style="font-size: 3.5em; color: #25cdcd; float: left">A</text>
+            <view class="iconbackground">
+              <text class="iconfont icon-xingqiu" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">舒尔特方块</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">视觉搜索</text>
+          </button>
+          <button class="two" style="width: 42%; background-color: #25cdcd">
+            <text style="font-size: 3.5em; color: #8e57aa; float: left">A</text> 
+            <view class="iconbackground">
+              <text class="iconfont icon-dengpao" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">连接能手</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">计划连接</text>
+          </button>
+        </view>
+        <view class="two-row">
+          <button class="three" style="width: 42%; background-color: #e93852">
+            <text style="font-size: 3.5em; color: #50b245; float: left">A</text>
+            <view class="iconbackground">
+              <text class="iconfont icon-dianchi" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">听声辩位</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">听觉选择注意</text>
+          </button>
+          <button class="four" style="width: 42%; background-color: #50b245">
+            <text style="font-size: 3.5em; color: #e93852; float: left">A</text>
+            <view class="iconbackground">
+              <text class="iconfont icon-jiqiren" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">图形记忆</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">同时性加工</text>
+          </button>
+        </view>
+        <view class="three-row">
+          <button class="five" style="width: 42%; background-color: #fac40a">
+            <text style="font-size: 3.5em; color: #2c5ba9; float: left">A</text>
+            <view class="iconbackground">
+              <text class="iconfont icon-shuaxin" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">图形推理</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">同时性加工</text>
+          </button>
+          <button class="six" style="width: 42%; background-color: #2c5ba9">
+            <text style="font-size: 3.5em; color: #fac40a; float: left">A</text>
+            <view class="iconbackground">
+              <text class="iconfont icon-wodepinglun" style="font-size: 25px"></text>
+            </view>
+            <text style="font-size:20px; float: left; color: white">字词回忆</text>
+            <text style="font-size:10px; float:right; margin-top:15px; color: #d3d3d3">继时性加工</text>
+          </button>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item class="thirditem" >
+      <scroll-view  class="thirdscroll" scroll-y="true" enable-flex="true">
+        <view class="outside">
+        <view class="testreport1">
+          <text class="h1">大脑能力雷达图</text>
+          <ec-canvas class="ec-canvas" id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec }}">
+          </ec-canvas>
+        </view>
+      <view class="testreport2">
+        <text class="h1">各能力开发进度</text>
+         <progress  border-radius="30rpx" class="progress" stroke-width="15" percent="66" color="#0779e4" backgroundColor="#aaaaaa"><text space="emsp">  计划 {{score}}</text></progress>
+         <progress  border-radius="30rpx" class="progress" stroke-width="15" percent="66" color="#ff4646" backgroundColor="#aaaaaa"><text space="emsp"> 注意力 {{score}}</text></progress>
+         <progress  border-radius="30rpx" class="progress" stroke-width="15" percent="66" color="#28df99" backgroundColor="#aaaaaa"><text space="emsp"> 同时性 {{score}}</text></progress>
+         <progress  border-radius="30rpx" class="progress" stroke-width="15" percent="66" color="#fdb827" backgroundColor="#aaaaaa"><text space="emsp"> 继时性 {{score}}</text></progress>
+      </view>
+      <view class="testreport3" auto-height="true">
+          <text class="h1">历史成绩</text>
+          <text space="emsp">测试时间    类型    成绩</text>
+          <view class="historyGame">
+            <text>2021/1/11</text>
+            <text style="margin-left:70rpx">图形记忆</text>
+             <text style="margin-left:100rpx">A</text>
+          </view>
+      </view>
+      </view>
+      </scroll-view>    
+    </swiper-item>
+  </swiper>
+</view>
